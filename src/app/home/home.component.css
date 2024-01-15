@@ -1,0 +1,107 @@
+
+.section1, .section2, .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Two equal columns */
+    grid-template-rows: 1fr;
+    gap: 20px; /* Adjust the gap between columns */
+    align-items: center; /* Center vertically */
+}
+
+.section1-content, .section2-content, .section3-content {
+    max-width: 400px; /* Adjust the max-width as needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 h2,
+.section1 p,
+.section1 .cta-button {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s ease-in-out; /* Add a smooth transition effect */
+
+}
+
+
+h2,p,a{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img:hover{
+    image-rendering: pixelated;
+    transform: scale(0.95); /* Adjust the scale factor as needed */
+}
+
+.horizontal-line{
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.cards-container-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+
+.cards-container-inner {
+    display: flex;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-paragraph {
+    margin-bottom: 10px;
+}
+
+.card-date {
+    color: #555;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.cards-container-inner img{
+    width: 300px;
+    
+}
+
