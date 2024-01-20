@@ -1,22 +1,13 @@
-<!-- Add these lines to your index.html file -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-
-<div class="content">
-    <h2> Home </h2>
-    <p>
-      I am a photographer that does wedding photography. Check out my projects!
-    </p>
-    <div class="card">
-      <h4> John & Amy </h4>
-      <p> Blue Mountains, Australia </p>
+<div class="login-container">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" formControlName="username" required>
     </div>
-    <div class="card">
-      <h4> Ross & Rach </h4>
-      <p> Hunter Valley Gardens, Australia </p>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" formControlName="password" required>
     </div>
-  </div>
+    <button type="submit" [disabled]="loginForm.invalid">Login</button>
+  </form>
+</div>
