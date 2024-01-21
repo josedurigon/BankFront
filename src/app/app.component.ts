@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { DropDownButtonComponent } from './Components/drop-down-button/drop-down-button.component';
 @Component({
